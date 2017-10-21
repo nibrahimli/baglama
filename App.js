@@ -1,5 +1,5 @@
 import React from 'react';
-import { BogcaApp } from './index';
+import BogcaApp from './index';
 import { View } from 'react-native';
 
 export default class App extends React.Component {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
   
   render() {
     return (
-    <View><BogcaApp/></View>
+    <BogcaApp/>
   );
   }
 }

@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Text } from 'react-native';
 
-class Greeting extends Component {
+class Greeting extends React.Component {
+
+  constructor(props) {
+    super(props);      
+  }
 
   render() {
     return (
-      <Text>Hello {this.props.name}!</Text>
+      <Text>Hello {this.props.user}!</Text>
     );
   }
 }
