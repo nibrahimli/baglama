@@ -7,7 +7,7 @@ import {
 import Welcome from './Welcome';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-//import { name } from '../helpers';
+import { loca } from '../helpers';
 import {
   setName,
   setLocale
@@ -22,6 +22,10 @@ const withReduxConnect = connect(
     bindActionCreators({setName, setLocale}, dispatch),
 );
 
+const withLocale = withHandlers({
+  setLocale: ({ setLocale }) => () => {
+    setLocale(loca());
+  }
+});
 
-
-export default compose(withReduxConnect)(Welcome);
+export default compose(withReduxConnect, withLocale)(Welcome);
