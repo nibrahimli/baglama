@@ -8,9 +8,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
-    "icon": "./assets/icons/rocket.png",
+    "icon": "./src/assets/icons/rocket.png",
     "loading": {
-      "icon": "./assets/icons/bar.png"
+      "icon": "./src/assets/icons/bar.png"
     },
     "packagerOpts": {
       "assetExts": ["ttf", "mp4"]

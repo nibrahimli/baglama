@@ -9,15 +9,17 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 //import { name } from '../helpers';
 import {
-  setName
+  setName,
+  setLocale
 } from '../store/actions';
 
 const withReduxConnect = connect(
   state => ({
-    user : state.user
+    user : state.app.user,
+    loc : state.settings.locale
   }),
   dispatch =>
-    bindActionCreators({setName}, dispatch),
+    bindActionCreators({setName, setLocale}, dispatch),
 );
 
 

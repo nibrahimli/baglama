@@ -1,11 +1,11 @@
 //Azerbaijan
 
 const texts = {
-  greeting: 'Salam'
+  greeting: 'Bonjour'
 };
 
 const states = {
-  az: 'Azerbaycan',
+  fr: 'Francais',
   en: 'Ingilis' 
 };
 
