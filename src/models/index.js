@@ -1,7 +1,6 @@
 import store from '../store/store';
 
-export const loca = () => {
-	console.log("helpers : " +store.getState().settings.locale);
+export const changeLocale = () => {
 	const settingsStore = store.getState().settings;
 	switch(settingsStore.locale){
 		case 'az' : return 'fr';

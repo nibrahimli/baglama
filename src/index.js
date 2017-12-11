@@ -1,7 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import Welcome from './screens/WelcomeHOC';
+import Welcome from './containers/WelcomeHOC';
+import I18n from './i18n/index';
 
 export default class BogcaApp extends React.Component {
 
@@ -9,6 +10,9 @@ export default class BogcaApp extends React.Component {
     super(props);      
   }
 
+  componentWillMount() {
+     I18n.initAsync();
+  }
   
   render() {
     return (

@@ -1,12 +1,14 @@
 //Azerbaijan
 
 const texts = {
-  greeting: 'Salam'
+  app_title: 'BAĞLAMA',
+  app_description: 'Baglamalarinizi dunyanin her yerine gonderin'
 };
 
 const states = {
-  az: 'Francais',
-  en: 'Ingilis' 
+  az: "Azərbaycanca",
+  fr: 'Fransizca',
+  en: 'Ingiliscə' 
 };
 
 export default {

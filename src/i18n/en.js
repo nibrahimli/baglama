@@ -1,11 +1,13 @@
 //ENGLISH
 
 const texts = {
-  greeting: 'hello'
+  app_title: 'BAĞLAMA',
+  app_description: 'Send your packages all ove the world'
 };
 
 const states = {
-  az: 'Azerbaijan',
+  az: 'Azerbaidjani',
+  fr: 'French',
   en: 'English (US)' 
 };
 

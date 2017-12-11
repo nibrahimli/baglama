@@ -1,12 +1,14 @@
 //Azerbaijan
 
 const texts = {
-  greeting: 'Bonjour'
+  app_title: 'BAĞLAMA',
+  app_description: 'Envoie vos colis partout dans le monde'
 };
 
 const states = {
-  fr: 'Francais',
-  en: 'Ingilis' 
+  az: 'Azerbaijanais',
+  fr: 'Français',
+  en: 'Anglais' 
 };
 
 export default {

@@ -4,10 +4,10 @@ import {
   withHandlers  
 } from 'recompose';
 
-import Welcome from './Welcome';
+import Welcome from '../components/Welcome';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { loca } from '../helpers';
+import { changeLocale } from '../models';
 import {
   setName,
   setLocale
@@ -23,8 +23,8 @@ const withReduxConnect = connect(
 );
 
 const withLocale = withHandlers({
-  setLocale: ({ setLocale }) => () => {
-    setLocale(loca());
+  updateLocale: ({ setLocale }) => () => {
+    setLocale(changeLocale());
   }
 });
 
