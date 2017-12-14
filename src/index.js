@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import Welcome from './containers/WelcomeHOC';
+import RootNavigator from './router';
 import I18n from './i18n/index';
 
 export default class BogcaApp extends React.Component {
@@ -17,7 +17,7 @@ export default class BogcaApp extends React.Component {
   render() {
     return (
     <Provider store={store}>
-      <Welcome />
+      <RootNavigator />
     </Provider>
   );
   }
