@@ -1,22 +1,26 @@
 {
   "expo": {
     "name": "Bağlama",
-    "description": "Items transport project",
-    "slug": "bogca",
+    "description": "Items transporting project",
+    "slug": "baglama",
     "privacy": "public",
-    "sdkVersion": "21.0.0",
-    "version": "1.0.0",
+    "sdkVersion": "21.0.0",    
     "orientation": "portrait",
     "primaryColor": "#cccccc",
-    "icon": "./src/assets/icons/rocket.png",
-    "loading": {
-      "icon": "./src/assets/icons/bar.png"
-    },
+    "icon": "./src/assets/icons/rocket.png",    
     "packagerOpts": {
       "assetExts": ["ttf", "mp4"]
     },
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
+      "buildNumber": "1.0.0",
       "supportsTablet": true
-    }
+    },
+    "android": {      
+      "versionCode": 16
+    },
+    "version": "1.0.0",
   }
 }

@@ -12,11 +12,8 @@ const RootNavigator = StackNavigator({
     }
   },
   Register: {
-    screen: RegisterScreen,
-    navigationOptions: {
-      headerTitle: 'Register',
-    }
-  },
+    screen: RegisterScreen
+  }
 });
 
 export default RootNavigator;
