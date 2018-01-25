@@ -17,6 +17,12 @@ const Welcome = ({user, loc, updateLocale, navigation}) =>(<View style={GlobalSt
  						  title="Navig to Register"
 						  color="#841584"
 						  accessibilityLabel="Log"/>
+
+						  <Button
+						  onPress={() => navigation.navigate('LoginV1')}
+ 						  title="Navig to Login"
+						  color="#841578"
+						  accessibilityLabel="Log"/>
 						   
 								</View>)
 
