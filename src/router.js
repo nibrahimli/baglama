@@ -3,6 +3,7 @@ import React from 'react';
 import WelcomeScreen from './containers/WelcomeHOC';
 import RegisterScreen from './components/Register';
 import LoginScreen from './components/LoginV1';
+import SignUpScreen from './components/signUp';
 
 
 const RootNavigator = StackNavigator({
@@ -17,6 +18,9 @@ const RootNavigator = StackNavigator({
   },
   LoginV1: {
     screen: LoginScreen
+  },
+  SignUp: {
+    screen: SignUpScreen
   }
 });
 
