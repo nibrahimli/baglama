@@ -4,9 +4,16 @@ import WelcomeScreen from './containers/WelcomeHOC';
 import RegisterScreen from './components/Register';
 import LoginScreen from './components/LoginV1';
 import SignUpScreen from './components/signUp';
+import SplashScreen from './screens/splash';
 
 
 const RootNavigator = StackNavigator({
+  Splash: {
+    screen: SplashScreen
+  },
+  LoginV1: {
+    screen: LoginScreen
+  },
   Welcome: {
     screen: WelcomeScreen,
     navigationOptions: {
@@ -15,10 +22,7 @@ const RootNavigator = StackNavigator({
   },
   Register: {
     screen: RegisterScreen
-  },
-  LoginV1: {
-    screen: LoginScreen
-  },
+  },  
   SignUp: {
     screen: SignUpScreen
   }

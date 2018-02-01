@@ -58,7 +58,7 @@ export default class LoginV1 extends React.Component {
             </RkButton>
           </View>
           <RkTextInput rkType='rounded' placeholder='Username'/>
-          <RkTextInput rkType='rounded' placeholder='Password' secureTextEntry={true}/>          
+          <RkTextInput rkType='rounded' placeholder='Password' secureTextEntry={true}/>     
           <View style={styles.footer}>
             <View style={styles.textRow}>
               <RkText rkType='primary3'>Don’t have an account?</RkText>

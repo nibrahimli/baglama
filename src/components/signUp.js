@@ -12,7 +12,6 @@ import {
   RkTheme,
   RkAvoidKeyboard
 } from 'react-native-ui-kitten';
-//import {GradientButton} from '../../components/';
 import {scale, scaleModerate, scaleVertical} from '../utils/scale';
 
 export default class SignUp extends React.Component {
