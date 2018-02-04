@@ -14,8 +14,9 @@ import {
   RkTheme
 } from 'react-native-ui-kitten';
 import {FontAwesome} from '../assets/icons';
-//import {GradientButton} from './index';
+import {GradientButton} from './index';
 import {scale, scaleModerate, scaleVertical} from '../utils/scale';
+import {bootstrap} from '../config/bootstrap';
 
 export default class LoginV1 extends React.Component {
   static navigationOptions = {
@@ -24,6 +25,10 @@ export default class LoginV1 extends React.Component {
 
   constructor(props) {
     super(props);
+  }
+
+   componentWillMount() {
+    bootstrap();
   }
 
   _renderImage(image) {
@@ -59,6 +64,9 @@ export default class LoginV1 extends React.Component {
           </View>
           <RkTextInput rkType='rounded' placeholder='Username'/>
           <RkTextInput rkType='rounded' placeholder='Password' secureTextEntry={true}/>     
+          <GradientButton onPress={() => {
+            this.props.navigation.goBack()
+          }} rkType='large' style={styles.save} text='LOGIN'/>
           <View style={styles.footer}>
             <View style={styles.textRow}>
               <RkText rkType='primary3'>Don’t have an account?</RkText>

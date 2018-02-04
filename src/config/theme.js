@@ -1,6 +1,6 @@
 import {scale, scaleVertical} from '../utils/scale'
 
-const Colors = {
+export const Colors = {
   accent: '#ff2824',
   primary: '#f64e59',
   success: '#3bd555',
@@ -66,9 +66,9 @@ const Colors = {
 };
 
 const Fonts = {
-  light: 'Roboto-Light',
+  // light: 'Roboto-Light',
   regular: 'Roboto-Regular',
-  bold: 'Roboto-Medium',
+  //bold: 'Roboto-Medium',
   logo: 'Righteous-Regular',
 };
 
